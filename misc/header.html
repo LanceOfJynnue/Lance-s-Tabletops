@@ -1,0 +1,53 @@
+<!-- 'Navigation Bar -->
+<div class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-bg px-lg-3 pb-5" style="z-index:0">
+        <table style="margin:0;">
+            <tr>
+                <td>
+                    <a class="navbar-brand fw-bold fs-2 h-font text-white">Lance's Tabletops</a>
+                </td>
+            </tr>
+        </table>
+        <div class="row container-fluid">
+            <ul class="col-md nonlist mb-2 mb-lg-0 d-flex">
+                <li class="nav-item">
+                    <a class="nav-link active me-2 text-white" href="index.html"><i class="bi bi-house fs-5 me-1"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active me-2 text-white" href="projects.html"><i class="bi bi-tools fs-5 me-1"></i> Projects</a>
+                </li>
+            </ul>
+            <ul class="col-md nonlist mb-2 mb-lg-0 d-flex">
+                <li class="nav-item">
+                    <a class="nav-link active me-2 text-white" href="socials.html"><i class="bi bi-phone fs-5 me-1"></i> Socials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active me-2 text-white" href="about.html"><i class="bi bi-person fs-5 me-1"></i> About Me</a>
+                </li>
+            </ul>
+            <ul class="col-md nonlist mb-2 mb-lg-0 d-flex">
+                <li class="nav-item">
+                    <a class="nav-link active me-2 text-white" href="https://web.facebook.com/profile.php?id=61594949132556" target="_blank"><i class="bi bi-facebook fs-5 me-1"></i> FB Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active me-2 text-white" href="Earl Lance Robert Morales Resume.pdf" target="_blank"><i class="bi bi-paperclip fs-5 me-1"></i> Resume</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navDiv = document.getElementById('navbarSupportedContent');
+
+  menuToggle.addEventListener('click', () => {
+    if (navDiv.style.display === 'none') {
+      navDiv.style.display = 'block';
+      menuToggle.textContent = 'Hide Content';
+    } else {
+      navDiv.style.display = 'none';
+      menuToggle.textContent = 'Show Content';
+    }
+  });
+</script>
